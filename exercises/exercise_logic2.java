@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-public class exercice_logic2 {
+public class exercise_logic2 {
     public static void main(String[] args) {
         //Read the value of a circle radius and print its area
         System.out.println("Type the circle radius: ");

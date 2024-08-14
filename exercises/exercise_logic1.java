@@ -1,7 +1,7 @@
 package exercises;
 import java.util.Scanner;
 
-public class exercice_logic1 {
+public class exercise_logic1 {
     public static void main(String[] args) {
         //Read 2 values and print their sum
         System.out.println("Type the 1st value: ");

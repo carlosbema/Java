@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-public class exercice_logic6 {
+public class exercise_logic6 {
     public static void main(String[] args) {
         //Read 3 values and print the area of the triangle, the area of the circle, the area of the trapezium, the area of the square and the area of the rectangle
         double a, b, c;

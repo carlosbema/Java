@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-public class exercice_logic4 {
+public class exercise_logic4 {
     public static void main(String[] args) {
         //Read the person number, worked hours and hourSalary and print the salary
         int personNumber, workedHours;
