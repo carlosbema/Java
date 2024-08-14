@@ -1,0 +1,24 @@
+package lessons;
+import java.util.Scanner;
+
+public class scanner2 {
+    public static void main(String[] args) {
+        @SuppressWarnings("resource")
+        Scanner sc = new Scanner(System.in);
+        int x;
+        String s1, s2, s3;
+
+        x = sc.nextInt();
+        sc.nextLine(); // limpa o buffer
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+        System.out.println("Dados digitados: ");
+        System.out.println("Inteiro: " + x);
+        System.out.println("String 1: " + s1);
+        System.out.println("String 2: " + s2);
+        System.out.println("String 3: " + s3);
+
+
+    }
+}

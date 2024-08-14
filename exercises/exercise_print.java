@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Locale;
 
-public class exercicio1_print {
+public class exercise_print {
 
     public static void main(String[] args) {
         String product1 = "Computer";
