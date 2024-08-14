@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class switch_case {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Digite um dia da semana: ");
