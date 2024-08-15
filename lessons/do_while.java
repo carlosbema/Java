@@ -12,7 +12,7 @@ public class do_while {
             double f = (9.0 / 5) * c + 32;
             System.out.println("Fahrenheit = " + f);
             System.out.println("Do you want to continue?");
-            answer = sc.nextLine();
+            answer = sc.next();
         } while (!answer.equals("no"));
         sc.close();
     }
