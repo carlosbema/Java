@@ -1,4 +1,4 @@
-package Laboratorios.lab1;
+package algorithmsAndDataStructuresLabs.lab1;
 
 public class lab1_v1 {
     public static void main(String[] args) {

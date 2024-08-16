@@ -1,4 +1,4 @@
-package Laboratorios.lab1;
+package algorithmsAndDataStructuresLabs.lab1;
 
 import java.util.Arrays;
 

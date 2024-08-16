@@ -6,7 +6,7 @@ public class for1 {
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
-        System.out.println("How many number you will type?");
+        System.out.println("How many number will you type?");
         int x = sc.nextInt();
         int sum = 0;
         for (int i = 0; i < x; i++) {
