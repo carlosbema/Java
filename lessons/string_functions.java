@@ -5,16 +5,16 @@ public class string_functions {
         String name = "Carlos Vinicius";
 
         String nameLower = name.toLowerCase(); // converte para minuscula
-        System.out.println(nameLower);
+        System.out.println(nameLower + " lower");
 
         String nameUpper = name.toUpperCase(); // converte para maiuscula
-        System.out.println(nameUpper);
+        System.out.println(nameUpper + " upper");
 
-        String nameTreim = name.trim(); // remove espacos
-        System.out.println(nameTreim);
+        String nameTrim = name.trim(); // remove espacos
+        System.out.println(nameTrim + " trimmed");
 
         String nameSubString = name.substring(0, 5); // corta a string
-        System.out.println(nameSubString);
+        System.out.println(nameSubString + " substring");
 
         String nameReplace = name.replace("i", "x"); // substitui
         System.out.println(nameReplace);
