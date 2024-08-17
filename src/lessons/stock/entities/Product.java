@@ -1,4 +1,5 @@
-package entities;
+package lessons.stock.entities;
+
 
 public class Product {
     public String name;
@@ -27,3 +28,4 @@ public class Product {
             + String.format("%.2f", totalValueInStock());
     }
 }
+

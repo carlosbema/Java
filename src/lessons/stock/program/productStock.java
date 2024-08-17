@@ -1,10 +1,9 @@
-package program;
+package lessons.stock.program;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Product;
-
-public class Program {
+import lessons.stock.entities.Product;
+public class productStock {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
