@@ -1,8 +1,8 @@
-package lessons.biggestTriangleWithOOP.program;
+package lessons.biggestTriangle.program;
 import java.util.Locale;
 import java.util.Scanner;
 
-import lessons.biggestTriangleWithOOP.entities.Triangle;
+import lessons.biggestTriangle.entities.Triangle;
 
 public class biggestTriangle {
     public static void main(String[] args) {
