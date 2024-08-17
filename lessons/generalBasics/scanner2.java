@@ -1,4 +1,4 @@
-package lessons;
+package lessons.generalBasics;
 import java.util.Scanner;
 
 public class scanner2 {

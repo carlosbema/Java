@@ -1,4 +1,4 @@
-package lessons;
+package lessons.functions_;
 
 public class string_functions {
     public static void main(String[] args) {

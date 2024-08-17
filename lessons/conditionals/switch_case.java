@@ -1,4 +1,4 @@
-package lessons;
+package lessons.conditionals;
 
 import java.util.Scanner;
 

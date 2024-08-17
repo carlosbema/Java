@@ -1,4 +1,4 @@
-package lessons;
+package lessons.biggestTriangleWithOOP.NoOPPexemple;
 
 import java.util.Locale;
 import java.util.Scanner;

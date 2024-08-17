@@ -1,4 +1,4 @@
-package lessons;
+package lessons.generalBasics;
 
 public class casting {
     public static void main(String[] args) {

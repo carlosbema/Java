@@ -1,3 +1,4 @@
+package program;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ public class Program {
         System.out.print("Quantity in stock: ");
         product.quantity = sc.nextInt();
         sc.close();
-        System.out.println("Product data: " + product.name + ", " + product.price + ", " + product.quantity);
+
+        System.out.println(product);
     }
 }
