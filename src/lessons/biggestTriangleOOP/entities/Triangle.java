@@ -1,4 +1,4 @@
-package lessons.biggestTriangle.entities;
+package lessons.biggestTriangleOOP.entities;
 
 public class Triangle {
 
