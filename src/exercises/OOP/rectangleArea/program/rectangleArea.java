@@ -1,5 +1,4 @@
 package exercises.OOP.rectangleArea.program;
-
 import java.util.Locale;
 import java.util.Scanner;
 
