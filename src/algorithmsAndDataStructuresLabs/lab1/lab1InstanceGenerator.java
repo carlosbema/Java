@@ -3,10 +3,14 @@ package algorithmsAndDataStructuresLabs.lab1;
 import java.util.Arrays;
 import java.util.Random;
 
+import java.util.Scanner;
 public class lab1InstanceGenerator {
-    public static void main(String[] args) {
-        int arraySize = 50;
-        int stringSize = 4;
+    public static void main(String[] args) {;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type array size: ");
+        int arraySize = sc.nextInt();
+        System.out.println("Type string size: ");
+        int stringSize = sc.nextInt();
 
         String[] randomStrings = new String[arraySize];
         Random random = new Random();
@@ -18,7 +22,7 @@ public class lab1InstanceGenerator {
 
             for (int j = 0; j < stringSize; j++) {
                 int randomIndex = random.nextInt(stringChars.length());
-                randomString .append(stringChars.charAt(randomIndex));
+                randomString.append(stringChars.charAt(randomIndex));
             }
 
             randomStrings[i] = randomString.toString();
@@ -29,5 +33,6 @@ public class lab1InstanceGenerator {
         );
 
         System.out.println(arrayAspas);
+        sc.close();
     }
 }
