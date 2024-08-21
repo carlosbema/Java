@@ -2,7 +2,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import exercises.OOP.rectangleArea.entities.Rectangle;
-
 public class rectangleArea {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
