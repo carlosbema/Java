@@ -6,12 +6,6 @@ public class Client {
     private String accHolder;
     private double balance;
 
-    public Client () {}
-    public Client (int accNumber, String accHolder, double balance) {
-        this.accNumber = accNumber;
-        this.accHolder = accHolder;
-        this.balance = balance;
-    }
     public Client (int accNumber, String accHolder) {
         this.accNumber = accNumber;
         this.accHolder = accHolder;

@@ -19,26 +19,31 @@ public class Program {
         System.out.println("Is there an initial deposit (y/n)? ");
         String initialAnswer = sc.nextLine();
 
-        Client client = new Client(accNumber, accHolder);
+        Client client;
 
         if (initialAnswer.contains("y")) {
             System.out.println("Enter initial deposit: ");
-            Double balance = sc.nextDouble();
-            client.deposit(balance);
+            Double inicialDeposit = sc.nextDouble();
+            client = new Client(accNumber, accHolder);
+            client.deposit(inicialDeposit);
+        }
+        else {
+            client = new Client(accNumber, accHolder);
         }
 
         System.out.println("Account data: \n" + client);
 
         System.out.println("Type D for a deposit, W for a Withdrawal, or Q to quit: ");
         char option = sc.next().charAt(0);
+        option = Character.toLowerCase(option);
 
-        while (option != 'Q') {
-            if (option == 'D') {
+        while (option != 'q') {
+            if (option == 'd') {
                 System.out.println("Enter amount: ");
                 Double value = sc.nextDouble();
                 client.deposit(value);
             }
-            else if (option == 'W') {
+            else if (option == 'w') {
                 System.out.println("Enter amount: ");
                 Double value = sc.nextDouble();
                 client.withdraw(value);
