@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Locale;
 
 import lessons.constructors.stockWithConstructor.entities.Product;
-public class productStock {
+public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -13,15 +13,12 @@ public class productStock {
         String name = sc.nextLine();
         System.out.print("Price: ");
         double price = sc.nextDouble();
-        System.out.print("Quantity in stock: ");
-        int quantity = sc.nextInt();
-
-        Product television = new Product(name, price, quantity);
+        Product television = new Product(name, price);
 
         System.out.println("Product data" + television);
 
         System.out.println("Enter the number of products to be added in stock: ");
-        quantity = sc.nextInt();
+        int quantity = sc.nextInt();
         television.addProducts(quantity);
         System.out.println("Updated data: " + television);
 
