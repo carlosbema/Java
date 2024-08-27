@@ -1,9 +1,10 @@
-package exercises.OOP.rectangleArea.program;
+package exercises.OOP.rectangleArea.mainProgram;
+
 import java.util.Locale;
 import java.util.Scanner;
 
 import exercises.OOP.rectangleArea.entities.Rectangle;
-public class rectangleArea {
+public class RectangleArea {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
