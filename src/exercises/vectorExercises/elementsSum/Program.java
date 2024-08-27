@@ -1,4 +1,4 @@
-package exercises.vectorExercises.vector_sum;
+package exercises.vectorExercises.elementsSum;
 
 import java.util.Locale;
 import java.util.Scanner;
