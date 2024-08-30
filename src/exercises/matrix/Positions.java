@@ -2,7 +2,7 @@ package exercises.matrix;
 
 import java.util.Locale;
 import java.util.Scanner;
-
+//read a matrix[M][N], search for a given number and prints the numbers around it
 public class Positions {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
