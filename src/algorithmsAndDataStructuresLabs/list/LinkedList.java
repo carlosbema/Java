@@ -1,6 +1,7 @@
-package list;
+package algorithmsAndDataStructuresLabs.list;
 
-import base.DoublyLinkedList;
+import algorithmsAndDataStructuresLabs.base.DoublyLinkedList;
+
 
 public class LinkedList<E> implements List<E> {
 	DoublyLinkedList<E> list = new DoublyLinkedList<>();

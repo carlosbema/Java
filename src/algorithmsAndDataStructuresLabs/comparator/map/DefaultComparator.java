@@ -1,4 +1,4 @@
-package comparator.map;
+package algorithmsAndDataStructuresLabs.comparator.map;
 
 import java.util.Comparator;
 

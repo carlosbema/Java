@@ -1,6 +1,7 @@
-package queue;
+package algorithmsAndDataStructuresLabs.queue;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
+
 
 public class TestQueue {
     static ArrayQueue<Point> queue = new ArrayQueue<>(5); 

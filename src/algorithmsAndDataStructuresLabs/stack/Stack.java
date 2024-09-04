@@ -1,4 +1,4 @@
-package stack;
+package algorithmsAndDataStructuresLabs.stack;
 
 public interface Stack<E> {
 	int size();

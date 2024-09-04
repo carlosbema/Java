@@ -1,9 +1,9 @@
-package comparator.priority_queue;
+package algorithmsAndDataStructuresLabs.comparator.priority_queue;
 
 import java.util.Comparator;
 
-import list.ArrayList;
-import list.List;
+import algorithmsAndDataStructuresLabs.list.ArrayList;
+import algorithmsAndDataStructuresLabs.list.List;
 
 public class ArrayPriorityQueue<K,V> implements PriorityQueue<K, V> {
 	

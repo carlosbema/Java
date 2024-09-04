@@ -1,6 +1,6 @@
-package map;
+package algorithmsAndDataStructuresLabs.map;
 
-import list.ArrayList;
+import algorithmsAndDataStructuresLabs.list.ArrayList;
 
 public class SortedArrayMap<K extends Comparable<? super K>,V> implements Map<K,V> {
 

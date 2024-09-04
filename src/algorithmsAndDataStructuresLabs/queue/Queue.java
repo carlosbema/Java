@@ -1,4 +1,4 @@
-package queue;
+package algorithmsAndDataStructuresLabs.queue;
 
 public interface Queue<E> {
 	int size();

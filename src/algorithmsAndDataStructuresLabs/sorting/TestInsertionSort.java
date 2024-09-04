@@ -1,6 +1,6 @@
-package sorting;
+package algorithmsAndDataStructuresLabs.sorting;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestInsertionSort {
 	

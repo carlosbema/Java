@@ -1,6 +1,6 @@
-package base;
+package algorithmsAndDataStructuresLabs.base;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestBase {
 	

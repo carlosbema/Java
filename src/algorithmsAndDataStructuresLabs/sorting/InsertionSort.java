@@ -1,4 +1,4 @@
-package sorting;
+package algorithmsAndDataStructuresLabs.sorting;
 
 public class InsertionSort {
     

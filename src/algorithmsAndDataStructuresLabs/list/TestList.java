@@ -1,6 +1,6 @@
-package list;
+package algorithmsAndDataStructuresLabs.list;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestList {
 	//static List<Point> list = new LinkedList<>(); 

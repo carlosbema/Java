@@ -1,6 +1,6 @@
-package comparator.sorting;
+package algorithmsAndDataStructuresLabs.comparator.sorting;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 import java.util.Comparator;
 
 public class TestInsertionSort {

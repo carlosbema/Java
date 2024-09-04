@@ -1,6 +1,6 @@
-package stack;
+package algorithmsAndDataStructuresLabs.stack;
 
-import base.SinglyLinkedList;
+import algorithmsAndDataStructuresLabs.base.SinglyLinkedList;
 
 public class LinkedStack<E> implements Stack<E> {
 	private SinglyLinkedList<E> list = new SinglyLinkedList<>();

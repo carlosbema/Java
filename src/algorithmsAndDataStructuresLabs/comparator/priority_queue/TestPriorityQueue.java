@@ -1,7 +1,7 @@
-package comparator.priority_queue;
+package algorithmsAndDataStructuresLabs.comparator.priority_queue;
 
 import java.util.Comparator;
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestPriorityQueue {
 	

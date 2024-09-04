@@ -1,6 +1,6 @@
-package stack;
+package algorithmsAndDataStructuresLabs.stack;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestStack {
 	

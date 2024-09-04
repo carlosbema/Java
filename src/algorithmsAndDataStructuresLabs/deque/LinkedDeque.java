@@ -1,6 +1,6 @@
-package deque;
+package algorithmsAndDataStructuresLabs.deque;
 
-import base.DoublyLinkedList;
+import algorithmsAndDataStructuresLabs.base.DoublyLinkedList;
 
 public class LinkedDeque<E> implements Deque<E> {
 	private DoublyLinkedList<E> list = new DoublyLinkedList<>();

@@ -1,4 +1,4 @@
-package map;
+package algorithmsAndDataStructuresLabs.map;
 
 public interface Map<K, V> {
 	int size();

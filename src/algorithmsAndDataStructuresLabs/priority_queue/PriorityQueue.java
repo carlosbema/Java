@@ -1,4 +1,4 @@
-package priority_queue;
+package algorithmsAndDataStructuresLabs.priority_queue;
 
 public interface PriorityQueue<K, V> {
 	int size();

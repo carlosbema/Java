@@ -1,6 +1,7 @@
-package comparator.map;
+package algorithmsAndDataStructuresLabs.comparator.map;
 
-import list.ArrayList;
+import algorithmsAndDataStructuresLabs.list.ArrayList;
+
 
 public class UnsortedArrayMap<K,V> implements Map<K,V> {
 

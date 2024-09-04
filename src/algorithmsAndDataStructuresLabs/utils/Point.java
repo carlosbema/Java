@@ -1,4 +1,4 @@
-package utils;
+package algorithmsAndDataStructuresLabs.utils;
 
 public class Point implements Comparable<Point> {
     

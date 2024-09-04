@@ -1,4 +1,4 @@
-package base;
+package algorithmsAndDataStructuresLabs.base;
 
 public class DoublyLinkedList<E> {
 	

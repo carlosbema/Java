@@ -1,4 +1,4 @@
-package list;
+package algorithmsAndDataStructuresLabs.list;
 
 public class ArrayList<E> implements List<E> {
 	public static final int CAPACITY=16;
