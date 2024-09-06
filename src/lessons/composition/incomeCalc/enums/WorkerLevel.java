@@ -1,4 +1,4 @@
-package lessons.composition.enums;
+package lessons.composition.incomeCalc.enums;
 
 public enum WorkerLevel {
     

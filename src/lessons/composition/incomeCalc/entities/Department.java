@@ -1,4 +1,4 @@
-package lessons.composition.entities;
+package lessons.composition.incomeCalc.entities;
 
 public class Department {
     private String name;

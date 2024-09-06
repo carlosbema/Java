@@ -1,11 +1,11 @@
-package lessons.composition.entities;
+package lessons.composition.incomeCalc.entities;
 
 import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.ZoneId;
 
-import lessons.composition.enums.WorkerLevel;
+import lessons.composition.incomeCalc.enums.WorkerLevel;
 
 public class Worker {
     private String name;

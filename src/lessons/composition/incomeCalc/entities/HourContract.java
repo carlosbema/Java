@@ -1,4 +1,4 @@
-package lessons.composition.entities;
+package lessons.composition.incomeCalc.entities;
 
 import java.util.Date;
 
