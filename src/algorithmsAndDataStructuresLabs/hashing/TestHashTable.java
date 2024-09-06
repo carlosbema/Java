@@ -1,4 +1,4 @@
-package hashing;
+package algorithmsAndDataStructuresLabs.hashing;
 
 import java.util.Hashtable;
 

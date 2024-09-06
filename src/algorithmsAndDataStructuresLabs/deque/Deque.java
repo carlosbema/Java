@@ -1,4 +1,4 @@
-package deque;
+package algorithmsAndDataStructuresLabs.deque;
 
 public interface Deque<E> {
 	int size();

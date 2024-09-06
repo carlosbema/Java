@@ -1,4 +1,4 @@
-package comparator.priority_queue;
+package algorithmsAndDataStructuresLabs.comparator.priority_queue;
 
 public interface PriorityQueue<K, V> {
 	int size();

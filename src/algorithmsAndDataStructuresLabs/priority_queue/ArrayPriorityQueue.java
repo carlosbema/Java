@@ -1,7 +1,7 @@
-package priority_queue;
+package algorithmsAndDataStructuresLabs.priority_queue;
 
-import list.ArrayList;
-import list.List;
+import algorithmsAndDataStructuresLabs.list.ArrayList;
+import algorithmsAndDataStructuresLabs.list.List;
 
 public class ArrayPriorityQueue<K extends Comparable<? super K>,V> implements PriorityQueue<K, V> {
 	

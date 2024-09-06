@@ -1,7 +1,7 @@
-package comparator.map;
+package algorithmsAndDataStructuresLabs.comparator.map;
 
 import java.util.Comparator;
-import list.ArrayList;
+import algorithmsAndDataStructuresLabs.list.ArrayList;
 
 public class SortedArrayMap<K,V> implements Map<K,V> {
 

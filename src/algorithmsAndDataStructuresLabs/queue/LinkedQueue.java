@@ -1,6 +1,6 @@
-package queue;
+package algorithmsAndDataStructuresLabs.queue;
 
-import base.SinglyLinkedList;
+import algorithmsAndDataStructuresLabs.base.SinglyLinkedList;
 
 public class LinkedQueue<E> implements Queue<E> {
 	private SinglyLinkedList<E> list = new SinglyLinkedList<>();

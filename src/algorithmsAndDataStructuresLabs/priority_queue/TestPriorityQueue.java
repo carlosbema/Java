@@ -1,6 +1,6 @@
-package priority_queue;
+package algorithmsAndDataStructuresLabs.priority_queue;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestPriorityQueue {
 	

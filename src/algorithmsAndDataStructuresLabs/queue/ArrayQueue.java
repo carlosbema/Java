@@ -1,4 +1,4 @@
-package queue;
+package algorithmsAndDataStructuresLabs.queue;
 
 public class ArrayQueue<E> implements Queue<E> {
 	public static final int CAPACITY = 1000;

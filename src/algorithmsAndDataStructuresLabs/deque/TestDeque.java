@@ -1,6 +1,6 @@
-package deque;
+package algorithmsAndDataStructuresLabs.deque;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class TestDeque {
 

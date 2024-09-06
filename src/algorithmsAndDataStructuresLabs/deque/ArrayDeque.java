@@ -1,4 +1,4 @@
-package deque;
+package algorithmsAndDataStructuresLabs.deque;
 
 public class ArrayDeque<E> implements Deque<E> {
 	public static final int CAPACITY = 1000;

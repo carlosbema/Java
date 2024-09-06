@@ -1,4 +1,4 @@
-package comparator.map;
+package algorithmsAndDataStructuresLabs.comparator.map;
 
 public interface Map<K, V> {
 	int size();

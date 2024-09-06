@@ -1,6 +1,6 @@
-package search;
+package algorithmsAndDataStructuresLabs.search;
 
-import utils.Point;
+import algorithmsAndDataStructuresLabs.utils.Point;
 
 public class SequentialSearch {
 	

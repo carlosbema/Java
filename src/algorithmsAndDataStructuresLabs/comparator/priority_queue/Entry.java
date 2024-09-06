@@ -1,4 +1,4 @@
-package comparator.priority_queue;
+package algorithmsAndDataStructuresLabs.comparator.priority_queue;
 
 public class Entry<K,V> {
 	private K k;
