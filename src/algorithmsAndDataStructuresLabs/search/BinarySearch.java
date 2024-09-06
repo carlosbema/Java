@@ -6,17 +6,16 @@ public class BinarySearch {
 	
     public static void main(String[] args) {
 		
-    	int[] intArray = {1, 4, 4, 5, 8, 9, 12, 19, 33};
+    	int[] intArray =  {15, 27, 33, 46, 51, 63, 71, 82, 90};
         
     	System.out.print("Array of integers: [ ");
         for(int i : intArray)
             System.out.print(i + " ");
         System.out.println("]");
         
+		System.out.println("Position of element 15: " + indexOf(intArray, 15));
 		System.out.println("Position of element 19: " + indexOf(intArray, 19));
-		System.out.println("Position of element 4: " + indexOf(intArray, 4));
-		System.out.println("Position of element 25: " + indexOf(intArray, 25));
-		
+		System.out.println("Position of element 90: " + indexOf(intArray, 90));
 		
 		Point[] pointArray = {
             new Point(-2, 12),
