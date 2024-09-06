@@ -1,0 +1,1 @@
+Those are some college old stuff, probably could be done better, but all of it was done EXACTLY as my teacher asked, even i think its not the best way
