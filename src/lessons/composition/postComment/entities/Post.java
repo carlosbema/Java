@@ -56,11 +56,14 @@ public class Post {
 
     @Override
     public String toString() {
-        return "moment=" + getMoment()+
-                "\ntitle='" + getTitle() + '\'' +
-                "\ncontent='" + getContent() + '\'' +
-                "\nlikes=" + getLikes() +
-                "\ncomments=" + getComments() +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Moment: " + moment + "\n");
+        sb.append("Likes: " + likes + "\n");
+        sb.append("Title: " + title + "\n");
+        sb.append("Content: " + content + "\n");
+        for (Comment c : comments) {
+            sb.append(c.getText() + "\n");
+        }
+        return sb.toString();
     }
 }

@@ -21,7 +21,6 @@ public class Program {
         Comment comment4 = new Comment("Comentario 4");
         post2.addComments(comment3);
         post2.addComments(comment4);
-        System.out.println(post1);
-        System.out.println(post2);
+        System.out.println(post1 + "\n" + post2);
     }
 }
