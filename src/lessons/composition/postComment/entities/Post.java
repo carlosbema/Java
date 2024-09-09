@@ -1,11 +1,11 @@
 package lessons.composition.postComment.entities;
 
-import lessons.composition.postComment.entities.Comment
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Post {
-    private String moment;
+    private Instant moment;
     private String title;
     private String content;
     private int likes;
@@ -15,10 +15,52 @@ public class Post {
     public Post() {
     }
 
-    public Post(String moment, String title, String content, int likes) {
+    public Post(Instant moment, String title, String content, int likes) {
         this.moment = moment;
         this.title = title;
         this.content = content;
         this.likes = likes;
+    }
+
+    public Instant getMoment() {
+        return moment;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void addComments(Comment comment) {
+        comments.add(comment);
+    }
+
+    @Override
+    public String toString() {
+        return "moment=" + getMoment()+
+                "\ntitle='" + getTitle() + '\'' +
+                "\ncontent='" + getContent() + '\'' +
+                "\nlikes=" + getLikes() +
+                "\ncomments=" + getComments() +
+                '}';
     }
 }
