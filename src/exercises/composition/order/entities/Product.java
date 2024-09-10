@@ -1,4 +1,4 @@
-package lessons.composition.order.entities;
+package exercises.composition.order.entities;
 
 public class Product {
     private String name;

@@ -1,9 +1,9 @@
-package lessons.composition.order.application;
+package exercises.composition.order.application;
 
-import lessons.composition.order.entities.Client;
-import lessons.composition.order.entities.Order;
-import lessons.composition.order.entities.OrderItem;
-import lessons.composition.order.entities.Product;
+import exercises.composition.order.entities.Client;
+import exercises.composition.order.entities.Order;
+import exercises.composition.order.entities.OrderItem;
+import exercises.composition.order.entities.Product;
 import lessons.enumerator.enums.OrderStatus;
 
 import java.text.ParseException;
@@ -50,7 +50,12 @@ public class Program {
             order.addOrderItem(orderItem);
         }
 
-        System.out.println(order);
-
+        System.out.println(order + "\n" +
+                order.getClient().toString() +
+                "\nOrder items: ");
+        System.out.println(order.getOrderItems());
+        for (OrderItem o : order.getOrderItems()) {
+            System.out.println(o.getProduct());
+        }
     }
 }

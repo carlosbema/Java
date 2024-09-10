@@ -1,6 +1,5 @@
-package lessons.composition.order.entities;
+package exercises.composition.order.entities;
 
-import lessons.composition.incomeCalc.entities.HourContract;
 import lessons.enumerator.enums.OrderStatus;
 
 import java.time.Instant;
@@ -34,6 +33,14 @@ public class Order {
         return status;
     }
 
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
     public List<OrderItem> getOrderItems() {
         return orderItems;
     }
@@ -46,13 +53,19 @@ public class Order {
         orderItems.remove(item);
     }
 
+    public Double total(List<OrderItem> orderItems) {
+        Double total = 0.0;
+        for (OrderItem orderItem : orderItems) {
+            total += orderItem.getPrice();
+        }
+        return total;
+    }
+
     @Override
     public String toString() {
         return "ORDER SUMMARY: " +
                 "\nOrder Moment: " + moment +
-                "\nOrder Status: " + status +
-                "\n" + client.toString() +
-                "\n" + orderItems.toString();
+                "\nOrder Status: " + status;
     }
 }
 

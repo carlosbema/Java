@@ -1,4 +1,4 @@
-package lessons.composition.order.entities;
+package exercises.composition.order.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +27,14 @@ public class OrderItem {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public Double subTotal(Product product, int quantity, Double price){

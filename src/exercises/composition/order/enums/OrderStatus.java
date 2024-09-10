@@ -1,4 +1,4 @@
-package lessons.composition.order.enums;
+package exercises.composition.order.enums;
 
 public class OrderStatus {
     int PENDING_PAYMENT = 0;
