@@ -15,27 +15,32 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
 
         //Dados cliente
         System.out.println("Enter client data: ");
         System.out.println("Name: " );
         String name = sc.nextLine();
         System.out.println("E-mail: ");
-        String email = sc.nextLine();
+        String email = sc.next();
         System.out.println("Birth date: ");
-        Date birthDate = sdf.parse(sc.nextLine());
+        Date birthDate = sdf.parse(sc.next());
+
+        Client client = new Client(name, email, birthDate);
 
         //Dados pedido
         System.out.println("Enter order data: ");
         System.out.println("Order status: ");
-        OrderStatus orderStatus =  OrderStatus.valueOf(sc.nextLine());
+        OrderStatus orderStatus =  OrderStatus.valueOf(sc.next());
+
+        Order order = new Order(new Date(), orderStatus, client);
+
         System.out.println("How many items to this order? ");
         int items = sc.nextInt();
-
-        Order order = new Order(Instant.now(), orderStatus, new Client(name, email, birthDate));
 
         for(int i = 0; i < items; i++) {
             System.out.println("Enter #" + (i + 1) + " item data: ");
@@ -46,16 +51,16 @@ public class Program {
             double productPrice = sc.nextDouble();
             System.out.println("Quantity: ");
             int productQuantity = sc.nextInt();
-            OrderItem orderItem = new OrderItem(new Product(productName, productPrice), productQuantity, productPrice);
-            order.addOrderItem(orderItem);
+
+            Product product = new Product(productName, productPrice);
+
+            OrderItem oi = new OrderItem(productQuantity, productPrice, product);
+
+            order.addOrderItem(oi);
         }
 
-        System.out.println(order + "\n" +
-                order.getClient().toString() +
-                "\nOrder items: ");
-        System.out.println(order.getOrderItems());
-        for (OrderItem o : order.getOrderItems()) {
-            System.out.println(o.getProduct());
-        }
+        System.out.println();
+        System.out.println(order);
+        sc.close();
     }
 }

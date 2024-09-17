@@ -4,20 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderItem {
-    private int quantity;
+    private Integer quantity;
     private Double price;
+
     private Product product;
 
-    public OrderItem(Product product, int quantity, Double price) {
+    public OrderItem(){}
+
+    public OrderItem(Integer quantity, Double price, Product product) {
         this.quantity = quantity;
         this.price = price;
+        this.product = product;
     }
 
-    public int getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
 
@@ -37,14 +41,17 @@ public class OrderItem {
         this.product = product;
     }
 
-    public Double subTotal(Product product, int quantity, Double price){
+    public Double subTotal(){
         return price * quantity;
     }
     @Override
     public String toString() {
-        return "Order Items: " +
-                "\nProducts=" + product +
-                ", Quantity=" + quantity +
-                ", Subtotal: " + subTotal(this.product, this.quantity, this.price);
+        return getProduct().getName()
+                + ", $"
+                + String.format("%.2f", price)
+                + ", Quantity: "
+                + quantity
+                + ", Subtotal: "
+                + String.format("%.2f", subTotal());
     }
 }
