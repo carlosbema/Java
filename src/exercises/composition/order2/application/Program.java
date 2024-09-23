@@ -1,5 +1,8 @@
 package exercises.composition.order2.application;
 
+import exercises.composition.order2.entities.Client;
+import exercises.composition.order2.entities.Order;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,5 +24,26 @@ public class Program {
         System.out.println("Birth date (DD/MM/YYYY): ");
         Date birthDate = sdf.parse(sc.next());
 
+        Client client = new Client(name, email, birthDate);
+
+        System.out.println("Enter order data: ");
+        System.out.println("Status: ");
+        String status = sc.nextLine();
+        System.out.println("How many items to this order?");
+        int items = sc.nextInt();
+
+        Order order = new Order(client, new Date(), status);
+
+        for (int i = 0; i < items; i++) {
+            System.out.println("Enter product data: ");
+            System.out.println("Name: ");
+            String productName = sc.nextLine();
+            System.out.println("Price: ");
+            double price = sc.nextDouble();
+            System.out.println("Quantity: ");
+            int quantity = sc.nextInt();
+
+
+        }
     }
 }
