@@ -25,7 +25,9 @@ public class OrderItem {
         this.price = price;
     }
 
-    public Product getProduct() {}
+    public Product getProduct() {
+        return product;
+    }
 
     public void addProduct(Product product) {
         this.product = product;

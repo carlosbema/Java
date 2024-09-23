@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "src/exercises/OOP/rectangleArea/program",
-        "src"
-    ],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": []
-}
