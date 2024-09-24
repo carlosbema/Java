@@ -20,7 +20,16 @@ public class SinglyLinkedList<E> {
 	private Node<E> tail = null;
 	private int size = 0;
 	
-	public int size() { return size; }
+	public int size() {
+		int count = 0;
+		Node<E> walker = head;
+		while (walker != null) {
+			walker = walker.getNext();
+			count++;
+		}
+		return count;
+	}
+
 	public boolean isEmpty() { return size == 0; }
 	
 	public E first() {
