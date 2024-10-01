@@ -68,6 +68,27 @@ public class SinglyLinkedList<E> {
 			tail = null;
 		return answer;
 	}
+
+	public E penultimo(){
+		if (size < 2) throw new IllegalStateException("A lista deve ter mais de 2 negocio");
+		Node<E> walk = head;
+		while(walk.getNext().getNext() != null){
+			walk = walk.getNext();
+		}
+		return walk.getElement();
+	}
+
+	public E removeLast(){
+		if(size < 2) throw new IllegalStateException("A lista deve ter mais de 2 negocio");
+		if (isEmpty()) return null;
+		Node<E> walk = head;
+		while(walk.getNext().getNext() != null){
+			walk = walk.getNext();
+		}
+		E answer = walk.getNext().getElement();
+		tail = walk.getNext();
+		return answer;
+	}
 	
 	public String toString() {
 	    StringBuilder sb = new StringBuilder("(");

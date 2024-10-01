@@ -14,13 +14,17 @@ public class TestBase {
         list.addFirst(new Point(7, 0));
         list.addFirst(new Point(-1, 6));
         list.addLast(new Point(3, 5));
-		
+
         System.out.println("Lista atual: " + list.toString());
         System.out.println("Primeiro elemento: " + list.first().toString());
+        System.out.println("Penultimo elemento: " + list.penultimo().toString());
 		System.out.println("Último elemento: " + list.last().toString());
 		
         System.out.println("Removendo o primeiro elemento...");
         list.removeFirst();
+
+        System.out.println("Removendo o último elemento...");
+        list.removeLast();
 		
         System.out.println("Lista atual: " + list.toString());
 		System.out.println("Tamanho da lista: " + list.size());
