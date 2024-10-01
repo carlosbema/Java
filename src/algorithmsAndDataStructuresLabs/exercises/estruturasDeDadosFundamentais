@@ -1,0 +1,89 @@
+3.1 - Nao ha consequencias, na verdade a remocao ate melhora o tempo de execucao
+
+3.2 - public int size(){
+      2 int count = 0;
+      3 Node<E> walk = head;
+      4 while(walk != null){
+      5 count++;
+      6 walk = walk.getNext();
+      7 }
+      8 return count;
+      9 }
+
+3.3 - private Node<E> penultimate(){
+      2 if(size < 2) throw new IllegalStateException("List must have 2 or more entries");
+      3 Node<E> walk = head;
+      4 while(walk.getNext().getNext() != null)
+      5 walk = walk.getNext();
+      18
+      Departamento de Engenharia de Software
+      Universidade do Estado de Santa Catarina
+      45EST – Algoritmos e Estruturas de Dados
+      Prof. Marcelo de Souza
+      6 return walk;
+      7 }
+
+3.4 -
+
+3.5 - tail.setNext(new Node<>(e, tail.getNext()));
+
+3.6 - private Node<E> middle(){
+      2 if(size == 0) throw new IllegalStateException("List must be nonempty");
+      3 Node<E> middle = header.getNext();
+      4 Node<E> partner = trailer.getPrev();
+      5 while(middle != partner && middle.getNext() != partner){
+      6 middle = middle.getNext();
+      7 partner = partner.getPrev();
+      8 }
+      9 return middle;
+      10 }
+
+3.7 - public int size2(){
+      if(tail == null)
+      return 0;
+      Node<E> walk = tail.getNext();
+      int count = 1;
+      while(walk != tail){
+      count++;
+      walk = walk.getNext();
+      }
+      return count;
+      }
+
+3.8 - public int size2(){
+      int count = 0;
+      Node<E> walk = header.getNext();
+      while(walk != trailer){
+      count++;
+      walk = walk.getNext();
+      }
+      return count;
+      }
+
+3.9 -
+
+3.10 - Concatenate(L,M):
+       2 Create a node v
+       3 v = L.getHead()
+       4 while v.getNext() != null do
+       5 v = v.getNext()
+       6 v.setNext(M.getHead())
+       7 return L
+
+3.12 - Realizar uma troca (swap) em uma lista simplesmente encadeada levará mais tempo do que em uma
+       lista duplamente encadeada. Essa implementação requer muito cuidado, especialmente quando x e y
+       são vizinhos um do outro. A dificuldade na eficiência ocorre porque para trocar x e y em uma lista
+       simplesmente encadeada devemos localizar os nodos imediatamente anteriores a x e y percorrendo a
+       estrutura, e não tem uma maneira rápida de fazer isso.
+
+3.13 - public void reverse(){
+       2 Node<E> prev = null;
+       3 Node<E> walk = head;
+       4 while(walk != null){
+       5 Node<E> adv = walk.getNext();
+       6 walk.setNext(prev);
+       7 prev = walk;
+       8 walk = adv;
+       9 }
+       10 head = prev;
+       11 }

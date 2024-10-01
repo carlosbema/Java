@@ -1,0 +1,57 @@
+6.1 - Se a pilha está vazia quando pop é chamado, seu tamanho não muda. Logo, o tamanho da pilha é
+25 − 10 + 3 = 18.
+
+6.2 - É uma posição menor que o tamanho. Logo, t = 17.
+
+6.3 - Resultado: 3, 8, 2, 1, 6, 7, 4, 9.
+
+6.4 - static <E> void transfer(Stack<E> S, Stack<E> T) {
+      2 while (!S.isEmpty( )) {
+      3 T.push(S.pop( ));
+      4 }
+      5 }
+
+6.5 - Se a pilha está vazia, retorne “pilha vazia”. Caso contrário, remova o elemento do topo da pilha e chame
+a operação recursivamente com a pilha atualizada.
+
+6.6 - Se a pilha está vazia quando dequeue é chamado, seu tamanho não é modificado. Logo, o tamanho da
+fila é 32 − 15 + 5 = 22.
+
+6.7 - Cada operação dequeue de sucesso implica em mover o índice para a direita de maneira circular. Logo,
+     f = 10.
+
+6.8 - Resultado: 5, 3, 2, 8, 9, 1, 7, 6.
+
+6.9 - Dica: basta usar as operações apropriadas nas extremidades do deque.
+
+6.10 - Dica: basta usar as operações apropriadas nas extremidades do deque.
+
+6.11 - Resultado: 9, false, 9, 2, 7, 6, 2, 1.
+
+6.12 - A solução consiste em usar o resultado dos métodos de remoção como argumentos para os métodos de
+       inserção. Solução:
+       D.addLast(D.removeFirst())
+       D.addLast(D.removeFirst())
+       D.addLast(D.removeFirst())
+       Q.enqueue(D.removeFirst())
+       Q.enqueue(D.removeFirst())
+       D.addFirst(Q.dequeue())
+       D.addFirst(Q.dequeue())
+       D.addFirst(D.removeLast())
+       D.addFirst(D.removeLast())
+       D.addFirst(D.removeLast())
+
+6.13 - A solução consiste em usar o resultado dos métodos de remoção como argumentos para os métodos
+       de inserção. Adicionalmente, você precisará usar mais de uma pilha para armazenamento temporário.
+       Solução:
+       D.addLast(D.removeFirst())
+       D.addLast(D.removeFirst())
+       D.addLast(D.removeFirst())
+       S.push(D.removeFirst())
+       D.addLast(D.removeFirst())
+       D.addFirst(S.pop())
+       D.addFirst(D.removeLast())
+       D.addFirst(D.removeLast())
+       D.addFirst(D.removeLast())
+       D.addFirst(D.removeLast())
+

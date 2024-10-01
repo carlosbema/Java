@@ -1,0 +1,64 @@
+7.1 - Caso a posição buscada seja 0 ou size - 1, retorna o elemento correspondente (associados ao primeiro
+      ou último nodos, respectivamente). É necessário verificar se a lista está vazia.
+
+7.2 - Basta verificar se o índice buscado é menor ou maior que size/2, para saber em qual metade da estrutura
+      o índice se encontra. Caso se trate da primeira metade, a busca deve ser realizada a partir do primeiro
+      elemento. Caso contrário, a busca inicia pelo último elemento. Com isso, apenas metade dos elementos
+      precisará ser varrido no pior caso. Logo, a complexidade cai para n/2, o que é mais eficiente na prática,
+      mas não altera a complexidade assintótica O(n).
+
+7.3 - Os métodos devem criar as listas alternativas, atribuir os elementos a elas e retornar a estrutura criada.
+      Diferentes implementações podem devolver uma lista com as mesmas referências ou com cópias dos
+      elementos.
+
+7.4 - Desenhe a lista, mostrando os estados antes e depois de cada operação. A configuração final da lista deve
+      ser (8, 2, 6, 5, 7, 3, 1, 4).
+
+7.5 - Dica: use o método size para ajudar a manter o controle do topo da pilha.
+
+7.6 - public void trimToSize() {
+      2 if (data.length != size)
+      3 resize(size);
+      4 }
+
+7.7 - Implemente a estratégia proposta e compare o tempo de execução da versão original e da nova versão.
+      Plote os tempos para verificar o comportamento da curva de resposta (i.e. seu crescimento linear).
+
+7.8 - O tempo de execução para inserir um novo elemento é O(n). Como n elementos são incluídos, o tempo
+      de execução total é O(n
+      2
+      ).
+
+7.9 - public void add(int i, E e) {
+      2 checkIndex(i, size + 1);
+      3 if (size == data.length) {
+      4 E[] temp = (E[]) new Object[2*data.length];
+      5 for (int k = 0; k < i; k++)
+      6 temp[k] = data[k];
+      7 temp[i] = e;
+      8 for (int k = i + 1; k < size + 1; k++)
+      9 temp[k] = data[k + 1];
+      10 data=temp;
+      11 } else {
+      12 for (int k = size - 1; k >= i; k--)
+      13 data[k + 1] = data[k];
+      14 data[i] = e;
+      15 }
+      size++;
+      17 }
+
+7.10 - Dica: modifique o método push de tal forma que ele modifique o tamanho quando necessário
+
+7.11 - public boolean contains(Object o) {
+       2 for (int k = 0; k < size; k++)
+       3 if (data[k].equals(o))
+       4 return true;
+       5 return false;
+       6 }
+
+7.12 - public void clear() {
+       2 for (int k = 0; k < size; k++)
+       3 data[k] = null;
+       4 size = 0;
+       5 }
+

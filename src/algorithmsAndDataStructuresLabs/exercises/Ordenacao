@@ -1,0 +1,53 @@
+5.1 - Array inicial:
+      (5, 7, 4, 9, 8, 5, 6, 3)
+
+      Array após cada inserção:
+      (5, 7, 4, 9, 8, 5, 6, 3)
+      (5, 7, 4, 9, 8, 5, 6, 3)
+      (4, 5, 7, 9, 8, 5, 6, 3)
+      (4, 5, 7, 9, 8, 5, 6, 3)
+      (4, 5, 7, 8, 9, 5, 6, 3)
+      (4, 5, 5, 7, 8, 9, 6, 3)
+      (4, 5, 5, 6, 7, 8, 9, 3)
+      (3, 4, 5, 5, 6, 7, 8, 9)
+
+5.2 - Basta inverter o operador relacional na comparação dos elementos. Ou seja, em vez de usar
+      comp.compare(element, array[index]) < 0, usamos comp.compare(element, array[index]) > 0.
+      Com isso, é fácil implementar um método de ordenação que recebe a ordem desejada (“normal” ou
+      “inversa”) como um parâmetro e executa a ordenação correspondente.
+
+5.3 - public void bubbleSort(E[] array) {
+      2 for (int lastIndex = array.length - 1; lastIndex > 0; lastIndex--) {
+      3 for (int index = 0; index < lastIndex; index++) {
+      4 if (comp.compare(array[index], array[index + 1]) > 0) {
+      5 E temp = array[index];
+      6 array[index] = array[index + 1];
+      7 array[index + 1] = temp;
+      8 }
+      9 }
+      10 }
+      11 }
+
+5.4 - O bubble sort tem complexidade assintótica de tempo O(n
+      2
+      ) no pior, médio e melhor casos. É possível
+      interromper o algoritmo quando uma passagem não faz nenhuma modificação, indicando que o array já
+      está ordenado. Neste caso, a complexidade assintótica no melhor caso é reduzida para O(n).
+
+5.5 - public boolean isSorted(E[] array) {
+      2 boolean sorted = true;
+      3 for (int index = 0; sorted && (index < array.length - 1); index++) {
+      4 if (comp.compare(array[index], array[index + 1]) > 0)
+      5 sorted = false;
+      6 }
+      7 return sorted;
+      8 }
+
+5.6 - Ao usar uma busca binária, reduzimos a complexidade assintótica da busca pela posição de inserção do
+      elemento de O(n) para O(log n) no pior caso. Apesar dessa redução, o algoritmo ainda precisa deslocar
+      elementos pela estrutura para efetivar a inserção, o que faz com que sua complexidade assintótica se
+      mantenha em O(n
+      2
+      ) no pior caso. Além disso, a busca binária ainda executaria em O(log n) no melhor
+      caso (quando a estrutura já está ordenada), enquanto a busca sequencial executa em O(1). Portanto, a
+      modificação proposta aumenta a complexidade do algoritmo de O(n) para O(n log n) no melhor caso.

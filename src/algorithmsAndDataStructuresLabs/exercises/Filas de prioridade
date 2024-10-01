@@ -1,0 +1,25 @@
+8.1 - (1, D), (3, J), (4, B), (5, A), (2, H), (6, L)
+8.2 - A melhor estrutura de dados para uma simulação de controle de tráfego aéreo é uma fila de prioridade.
+      Essa estrutura permite manipular os timestamps e manter os eventos em ordem, de tal forma que o evento
+      com menor instante de tempo seja facilmente extraído.
+
+8.3 -Mantenha uma variável adicional que referencie a entrada mínima atual. Isso permite executar a operação
+     min em tempo constante O(1). Para que isso funcione, o método insert deve ser alterado, atualizando
+     a variável adicional sempre que o novo elemento sendo inserido seja menor que min, bem como ao inserir
+     quando a estrutura está vazia. O método removeMin também deve ser alterado, pois ele será responsável
+     por identificar o novo elemento mínimo e atualizar a referência da variável adicional, para então remover
+     o min.
+8.4 -Não. A operação removeMin continua necessitando tempo linear O(n). Apesar do min atual ser facilmente encontrado e removido, tal método precisa percorrer todos os elementos restantes para identificar o novo
+mínimo.
+
+8.5 -A solução é manter os timestamps nas entradas da fila de prioridades. Mantenha uma variável minKey
+     inicializada com 0. Quando executar a operação push com um elemento e, chame insert(minKey, e) e
+     decremente minKey. Na operação pop, chame remove e incremente minKey.
+8.6 -A estratégia é similar ao exercício anterior. Mantenha uma variável maxKey inicializada com 0. Na
+     operação de enfileirar um elemento e, chame insert(maxKey, e) e incremente maxKey. Na operação de
+     desenfileirar, chame removeMin.
+8.7 -Não. Contra exemplo:
+     Dada a sequência de operações enqueue(A), enqueue(B), enqueue(C), dequeue(), dequeue(),
+     enqueue(D). A fila contém os elementos C e D, sendo C o mais antigo na estrutura. No entanto, a
+     operação dequeue() removerá o elemento D, se usarmos a implementação proposta.
+8.8 -("Joey", 20), ("Joey", 20), ("Ross", 10), ("Phoebe", 15), ("Monica", 28)
