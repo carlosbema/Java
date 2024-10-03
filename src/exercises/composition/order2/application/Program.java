@@ -2,6 +2,9 @@ package exercises.composition.order2.application;
 
 import exercises.composition.order2.entities.Client;
 import exercises.composition.order2.entities.Order;
+import exercises.composition.order2.entities.OrderItem;
+import exercises.composition.order2.entities.Product;
+import exercises.composition.order2.entities.enums.OrderStatus;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -28,7 +31,7 @@ public class Program {
 
         System.out.println("Enter order data: ");
         System.out.println("Status: ");
-        String status = sc.nextLine();
+        OrderStatus status = OrderStatus.valueOf(sc.next());
         System.out.println("How many items to this order?");
         int items = sc.nextInt();
 
@@ -37,13 +40,19 @@ public class Program {
         for (int i = 0; i < items; i++) {
             System.out.println("Enter product data: ");
             System.out.println("Name: ");
+            sc.nextLine();
             String productName = sc.nextLine();
             System.out.println("Price: ");
             double price = sc.nextDouble();
             System.out.println("Quantity: ");
             int quantity = sc.nextInt();
 
+            Product product = new Product(productName, price);
 
+            OrderItem orderItem = new OrderItem(quantity, price, product);
+
+            order.addOrderItem(orderItem);
         }
+        System.out.println(order.toString());
     }
 }

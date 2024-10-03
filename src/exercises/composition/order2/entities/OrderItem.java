@@ -36,4 +36,13 @@ public class OrderItem {
     public Double subTotal(int quantity, double price) {
         return quantity * price;
     }
+
+    @Override
+    public String toString() {
+        return "OrderItems: " +
+                "quantity=" + quantity +
+                ", price=" + product.getPrice() +
+                ", product=" + product.getName() +
+                '}';
+    }
 }

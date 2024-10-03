@@ -1,19 +1,23 @@
 package exercises.composition.order2.entities;
 
-import exercises.composition.order.entities.OrderItem;
+import exercises.composition.order2.entities.enums.OrderStatus;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Order {
     private Date moment;
-    private String status;
+    private OrderStatus status;
     private Client client;
-    private List<OrderItem> orderItems;
+    private List<OrderItem> orderItems = new ArrayList<>();
+
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Order() {}
 
-    public Order(Client client, Date moment, String status) {
+    public Order(Client client, Date moment, OrderStatus status) {
         this.client = client;
         this.moment = moment;
         this.status = status;
@@ -27,11 +31,11 @@ public class Order {
         this.moment = moment;
     }
 
-    public String getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 
@@ -45,5 +49,12 @@ public class Order {
 
     public void removeOrderItem(OrderItem orderItem) {
         orderItems.remove(orderItem);
+    }
+
+    @Override
+    public String toString() {
+        return "Order moment: " + sdf.format(moment) +
+                "\nOrder status: " + status +
+                "\nClient: " + client.toString();
     }
 }
