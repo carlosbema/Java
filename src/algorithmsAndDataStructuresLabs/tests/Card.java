@@ -21,12 +21,6 @@ public class Card {
     }
 
     @Override
-    public int hashCode() {
-        return name.hashCode();
-    }
-
-    // Método toString
-    @Override
     public String toString() {
         return name;
     }
