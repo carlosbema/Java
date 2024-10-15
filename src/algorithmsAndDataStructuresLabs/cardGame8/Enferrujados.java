@@ -9,7 +9,7 @@ public class Enferrujados {
         String linha;
         while ((linha = reader.readLine()) != null) {
             String[] cartas = linha.split(" ");
-            // Monte de cartas para compra: usando uma pilha (Stack)
+            // Monte de cartas para compra com pilha
             Stack<String> monte = new Stack<>();
             for (int i = cartas.length - 1; i >= 0; i--) {
                 monte.push(cartas[i]);
@@ -20,12 +20,12 @@ public class Enferrujados {
     }
 
     public static void simularPartida(Stack<String> monte) {
-        // Mão dos jogadores: usando listas dinâmicas (LinkedList)
+        // Mão dos jogadores com listas
         LinkedList<String> maoJogador1 = new LinkedList<>();
         LinkedList<String> maoJogador2 = new LinkedList<>();
         // Cartas na mesa: usando deque (ArrayDeque)
         Deque<String> mesa = new ArrayDeque<>();
-        // Cartas coletadas pelos jogadores: usando pilhas (Stack)
+        // Cartas coletadas com pilhas
         Stack<String> coletadasJogador1 = new Stack<>();
         Stack<String> coletadasJogador2 = new Stack<>();
 
@@ -98,11 +98,19 @@ public class Enferrujados {
         // Remove a carta da mão do jogador
         iterator.remove();
         if (esquerda) {
-            // Coletar carta da extremidade esquerda da mesa
-            coletadas.push(mesa.pollFirst());
+            // Coletar todas as cartas iguais consecutivas da extremidade esquerda
+            String primeiraCarta = mesa.pollFirst();
+            coletadas.push(primeiraCarta);
+            while (!mesa.isEmpty() && mesa.peekFirst().equals(primeiraCarta)) {
+                coletadas.push(mesa.pollFirst());
+            }
         } else {
-            // Coletar carta da extremidade direita da mesa
-            coletadas.push(mesa.pollLast());
+            // Coletar todas as cartas iguais consecutivas da extremidade direita
+            String ultimaCarta = mesa.pollLast();
+            coletadas.push(ultimaCarta);
+            while (!mesa.isEmpty() && mesa.peekLast().equals(ultimaCarta)) {
+                coletadas.push(mesa.pollLast());
+            }
         }
     }
 }
