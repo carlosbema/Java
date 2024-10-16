@@ -1,4 +1,4 @@
-package lessons.heritage.entities;
+package src.lessons.heritage.entities;
 
 public class BusinessAccount extends Account {
     private Double loanLimit;

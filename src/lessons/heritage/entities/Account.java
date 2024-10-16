@@ -1,4 +1,4 @@
-package lessons.heritage.entities;
+package src.lessons.heritage.entities;
 
 public class Account {
     protected Integer number;
