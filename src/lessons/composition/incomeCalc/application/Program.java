@@ -1,8 +1,8 @@
-package lessons.composition.incomeCalc.application;
+package src.lessons.composition.incomeCalc.application;
 
-import lessons.composition.incomeCalc.entities.Department;
-import lessons.composition.incomeCalc.entities.HourContract;
-import lessons.composition.incomeCalc.entities.Worker;
+import src.lessons.composition.incomeCalc.entities.Department;
+import src.lessons.composition.incomeCalc.entities.HourContract;
+import src.lessons.composition.incomeCalc.entities.Worker;
 import lessons.composition.incomeCalc.enums.WorkerLevel;
 
 import java.text.ParseException;
