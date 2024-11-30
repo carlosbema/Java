@@ -1,4 +1,4 @@
-package lessons.composition.incomeCalc.entities;
+package src.lessons.composition.incomeCalc.entities;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 
 import lessons.composition.incomeCalc.enums.WorkerLevel;
+import src.lessons.composition.incomeCalc.entities.Department;
+import src.lessons.composition.incomeCalc.entities.HourContract;
 
 public class Worker {
     private String name;
